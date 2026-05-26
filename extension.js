@@ -248,8 +248,7 @@ function iconColorForSnapshots(systemSnapshot, userSnapshot) {
         return 'red';
 
     if (TRANSITIONAL_STATES.has(systemSnapshot.state) ||
-        TRANSITIONAL_STATES.has(userSnapshot.state) ||
-        userSnapshot.state === 'unavailable') {
+        TRANSITIONAL_STATES.has(userSnapshot.state)) {
         return 'yellow';
     }
 
